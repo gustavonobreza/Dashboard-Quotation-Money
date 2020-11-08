@@ -1,45 +1,48 @@
-// let JSON = require('../../JSON/economia.awesomeapi.com.br.json');
-let ajax = new XMLHttpRequest()
+async function getContent() {
+  try {
+     const response = await fetch("https://economia.awesomeapi.com.br/json/all")
+     // console.log(response);
+     const datas = await response.json()
+     show(datas)
 
-// Marcando elementos HTML
-const mainDisplay = document.querySelector('.list')
 
-// console.log(USD.bid, USDT.bid, CAD.bid, AUD.bid, EUR.bid, GBP.bid)
+  } catch (error) {
+     console.error('Deu ruim mano!', error)
+  }
+}
+getContent()
 
-// ajax.open("GET", "../JSON/economia.awesomeapi.com.br.json");
-// ajax.responseType = "json";
+function show(JSON_T) {
+  const listDisplay = document.querySelector('.list');
 
-// // ajax.send()
-// ajax.addEventListener("readystatechange", function() {
-//    if (ajax.readyState === 4 && ajax.status == 200 || 306) {
+  var USD = JSON_T.USD;
+  var USDT = JSON_T.USDT;
+  var CAD = JSON_T.CAD;
+  var AUD = JSON_T.AUD;
+  var EUR = JSON_T.EUR;
+  var GBP = JSON_T.GBP;
+  var ARS = JSON_T.ARS;
+  var JPY = JSON_T.JPY;
+  var CHF = JSON_T.CHF;
+  var CNY = JSON_T.CNY;
+  var BTC = JSON_T.BTC;
+  var ETH = JSON_T.ETH;
 
-//       var JSON = ajax.response;
+  // console.log(CAD);
+  function numberToReal(numero) {
+     var numero = numero.toFixed(2).split('.');
+     numero[0] = "R$ " + numero[0].split(/(?=(?:...)*$)/).join('.');
+     return numero.join(',');
+  }
 
-//       var USD = JSON.USD;
-//       var USDT = JSON.USDT;
-//       var CAD = JSON.CAD;
-//       var AUD = JSON.AUD;
-//       var EUR = JSON.EUR;
-//       var GBP = JSON.GBP;
-//       var ARS = JSON.ARS;
-//       var JPY = JSON.JPY;
-//       var CHF = JSON.CHF;
-//       var CNY = JSON.CNY;
-//       var BTC = JSON.BTC;
-//       var ETH = JSON.ETH;
-
-//       // console.log(CAD);
-
-//       let arr = [USD, USDT, CAD, AUD, EUR, GBP, ARS, JPY, CHF, CNY, BTC, ETH];
-//       for (let i = 0; i < arr.length; i++) {
-//          mainDisplay.innerHTML += `
-//             <div class="border" id="${i}">
-//             ${arr[i].name}: <span>R$ ${Number(arr[i].bid).toFixed(2).replace(".", ",")}<span> </div><br>`
-//       }
-
-//    } else {
-//       alert('deu ruim!')
-//    }
-// })
-
-// Alternativo para teste
+  let arrTp = [USD, USDT, CAD, AUD, EUR, GBP, ARS, CHF, JPY, BTC, ETH];
+  for (var i = 0; i < arrTp.length; i++) {
+     let FormattedMoney = numberToReal(Number(arrTp[i].bid));
+     listDisplay.innerHTML += `
+<div class="border" id="${i}">
+${arrTp[i].name}: <span>${FormattedMoney}<span> </div><br>
+  `
+  
+  }
+  
+}
