@@ -43,6 +43,6 @@ function show(JSON_T) {
 ${arrTp[i].name}: <span>${FormattedMoney}<span> </div><br>
   `
   
-  }
+   }
   
 }
