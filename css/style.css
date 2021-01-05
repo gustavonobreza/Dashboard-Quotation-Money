@@ -7,16 +7,17 @@
 }
 html,body{
   width: 99%;
-  background-color: #41abe0;
+  /* background-color: #46ccccec; */
 }
 .main{
+  overflow-y: hidden;
   width: 100%;
 }
 h1{
   vertical-align: middle;
   width: 100%;
-  font-size: 60pt;
-  color: white;
+  font-size: 70pt;
+  /* color: rgb(40, 233, 40); */
   font-family: Lato;
   text-align: center;
   margin-bottom: 130px;
@@ -37,8 +38,8 @@ h1{
   /* border: 1px solid #41abe0; */
   text-align: center;
   align-items: center;
-  background-color: rgba(10, 10, 10, 0.911);
-  color: white;
+  /* background-color: rgb(31, 84, 199); */
+  /* color: #200F8C; */
   font-family: "Lato", sans-serif;
   /* margin: 8px 0; */
   padding: 100px 0 100px 20px;
@@ -48,6 +49,23 @@ h1{
   max-width: 1000px;
 }
 span{
-  color: yellow;
+  color: #F27781;
   margin-left: 12px;
+}
+/* ----------------------------------------------------- */
+/* Corpo */
+body
+{
+    background-color: rgb(255, 255, 255);
+}
+/* Título */
+h1
+{
+    color: rgb(32, 97, 214);
+}
+/* Quadro */
+.border
+{
+color: #2382db;
+background-color: rgb(68, 224, 37);
 }
