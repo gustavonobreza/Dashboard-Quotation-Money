@@ -41,7 +41,7 @@ html,body{
   line-height: 55px;
   vertical-align: middle;
   box-shadow: 4px 5px 2px #6272a4;
-  max-width: 1500px;
+  max-width: 99vw;
 }
 span{
   color: #ff79c6;
