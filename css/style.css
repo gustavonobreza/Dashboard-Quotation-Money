@@ -45,7 +45,7 @@ h1{
   padding: 100px 0 100px 20px;
   line-height: 55px;
   vertical-align: middle;
-  box-shadow: 4px 5px 2px rgba(255, 255, 255, 0.651);
+  box-shadow: 4px 5px 2px #6272a4;
   max-width: 1000px;
 }
 span{
