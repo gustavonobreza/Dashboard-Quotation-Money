@@ -27,7 +27,7 @@ html,body{
 }
 .border{
   text-align: left;
-  width: 90%;
+  width: 1000%;
   /* height: 93vh; */
   margin: 20px;
   height: 160px;
@@ -41,7 +41,7 @@ html,body{
   line-height: 55px;
   vertical-align: middle;
   box-shadow: 4px 5px 2px #6272a4;
-  max-width: 1000px;
+  max-width: 1500px;
 }
 span{
   color: #ff79c6;
