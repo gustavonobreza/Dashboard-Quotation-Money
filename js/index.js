@@ -35,6 +35,11 @@ function show(JSON_T) {
     }
 
     let arrTp = [USD, USDT, CAD, AUD, EUR, GBP, ARS, CHF, JPY, BTC, ETH];
+    
+    for(coin of arrTp){
+        coin.name = coin.name.split("/")[0]
+    }
+    
     for (var i = 0; i < arrTp.length; i++) {
         let FormattedMoney = numberToReal(Number(arrTp[i].bid));
         listDisplay.innerHTML += `
