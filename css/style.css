@@ -15,16 +15,6 @@ html,body{
   overflow-y: hidden;
   width: 100%;
 }
-h1{
-  vertical-align: middle;
-  width: 100%;
-  font-size: 70pt;
-  /* color: rgb(40, 233, 40); */
-  font-family: Lato;
-  text-align: center;
-  margin-bottom: 130px;
-  border-bottom: 1px solid #fff;
-}
 .list{
   /* display: inline; */
   /* flex-direction: column; */
@@ -41,7 +31,7 @@ h1{
   /* height: 93vh; */
   margin: 20px;
   height: 160px;
-  font-size: 70px;
+  font-size: 10wh;
   /* border: 1px solid #41abe0; */
   /* background-color: rgb(31, 84, 199); */
   /* color: #200F8C; */
