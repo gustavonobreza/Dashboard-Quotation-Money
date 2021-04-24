@@ -54,7 +54,7 @@ h1{
   max-width: 1000px;
 }
 span{
-  color: #f1fa8c;
+  color: #ff79c6;
   margin-left: 12px;
 }
 /* ----------------------------------------------------- */
@@ -65,5 +65,5 @@ body
 }
 /* Quadro */
 .border
-{color: #ff79c6;background-color: #44475a;}
+{color: #f1fa8c;background-color: #44475a;}
 
