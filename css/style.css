@@ -10,7 +10,8 @@ html,body{
   /* background-color: #46ccccec; */
 }
 .main{
-  margin: 6% auto;
+  margin: 4% auto;
+  text-align: center;
   overflow-y: hidden;
   width: 100%;
 }
@@ -58,11 +59,6 @@ span{
 body
 {
     background-color: #282a36;
-}
-/* Título */
-h1
-{
-    color: rgb(32, 97, 214);
 }
 /* Quadro */
 .border
