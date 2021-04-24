@@ -17,7 +17,7 @@ function show(JSON_T) {
 
     var USD = JSON_T.USD;
     var DOGE = JSON_T.DOGE;
-    var LITE = JSON_T.LITE;
+    var LITE = JSON_T.LTC;
     var CAD = JSON_T.CAD;
     var AUD = JSON_T.AUD;
     var EUR = JSON_T.EUR;
@@ -38,7 +38,7 @@ function show(JSON_T) {
     let arrTp = [USD, DOGE, LITE, CAD, AUD, EUR, GBP, ARS, CHF, JPY, BTC, ETH];
     
     for(coin of arrTp){
-        coin?.name = coin?.name.split("/")[0]
+        coin.name = coin.name.split("/")[0]
     }
     
     for (var i = 0; i < arrTp.length; i++) {
