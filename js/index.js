@@ -16,7 +16,8 @@ function show(JSON_T) {
     const listDisplay = document.querySelector('.list');
 
     var USD = JSON_T.USD;
-    var USDT = JSON_T.USDT;
+    var DOGE = JSON_T.DOGE;
+    var LITE = JSON_T.LITE;
     var CAD = JSON_T.CAD;
     var AUD = JSON_T.AUD;
     var EUR = JSON_T.EUR;
@@ -34,7 +35,7 @@ function show(JSON_T) {
         return numero.join(',');
     }
 
-    let arrTp = [USD, USDT, CAD, AUD, EUR, GBP, ARS, CHF, JPY, BTC, ETH];
+    let arrTp = [USD, DOGE, LITE, CAD, AUD, EUR, GBP, ARS, CHF, JPY, BTC, ETH];
     
     for(coin of arrTp){
         coin.name = coin.name.split("/")[0]
